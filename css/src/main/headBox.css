@@ -1,44 +1,44 @@
 /* main_all.css > headBox.css */
 
-#headBox { width:100%; height:auto; background-color:var(--color-white);
- position:fixed; top:0; left:0; z-index:900; height:140px;}
+#headBox { width:100%; height:auto; 
+ position:fixed; top:0; left:0; z-index:900; height:130px;}
 
-.head_wrap { position:relative; min-width:1024px; height:auto; min-height:120px;
-  padding: 0 7vw;  margin:auto; box-sizing: border-box;}
-  .head_wrap:before, .head_wrap::before { content:" "; display:block; width:100vw; height:140px;
-  position:absolute; top:0; left:0; z-index:-2; }
+.head_wrap { position:relative; min-width:1024px; height:auto; min-height:130px; margin:auto;}
+  .head_wrap:before, .head_wrap::before { content:" "; display:block; width:100vw; height:130px;
+  position:absolute; top:0; left:0; z-index:-2; background-color:var(--color-white); }
 
-#unbBox { position:relative; width:100%; height:auto; padding:10px 0;
-  box-sizing: border-box;}
+#unbBox { position:relative; width:100%; height:auto;}
 
-h1 { position:relative; z-index:1000; float:left; width:140px; height:50px;}
+h1 { position:relative; z-index:1000; margin:auto; width:140px; height:80px;}
 h1 a { background-image: url("./../../../img/wjfood_logoLong.png");
     background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;}
 
 /* ================================================================== */
 
+#linkBox { position:absolute; top:50%; left:0; 
+  width:240px; height:auto; transform:translateY(-50%);}
+#linkBox > li a { float:left; width:33.3333%; font-size: 0.875rem;}
+
 .unb_link { position:absolute; top:50%; right:0; 
-  width:360px; height:auto; transform:translateY(-50%);}
-.unb_link > li {  float:left; margin:0 3%; font-size: 1rem;}
-
-#navBox { width:1024px; height:auto; margin:auto;}
-#navBox:before, #navBox::before { content:" "; display:block;
-  position:absolute; bottom:0; left:0; z-index:-1;
-  width:100vw; height:50px; 
-  background-color: var(--color-light-green);}
-
-
-#navBox li { float:left; height:auto;}
+  width:320px; height:auto; transform:translateY(-50%);}
+.unb_link > li a {  float:left; margin:0 2%; font-size: 0.875rem;}
 
 /* ================================================================== */
 
-.gnbBox { float:left; width:57.14%; height:50px;}
-.gnbBox li { width:25%;}
+#navBox { width:1024px; height:auto; margin:auto;}
+#navBox:before, #navBox::before { content:" "; display:block;
+  position:absolute; bottom:0; left:0; z-index:-2;
+  width:100vw; height:50px; 
+  background-color: var(--color-light-green);}
+
+#navBox li { float:left; width:25%; height:auto;}
+
+.gnbBox { float:left; width:100%; height:50px;}
 .gnbBox dt { width:100%; height:50px;}
 
-.gnbBox dt > a, #linkBox li > a  { 
+.gnbBox dt > a { 
   display:block; width:100%; height:50px; 
-  font-size: 1.5rem; font-weight:700; line-height:50px; text-align: center;}
+  font-size: 1.2rem; font-weight:700; line-height:50px; text-align: center;}
 
   .gnbBox dd{ display:block; width:100%; height:auto; background-color: rgba(100,100,100,0.2);
     padding:16px 0; text-align: left; text-indent:18px; font-size:1.125rem;}
@@ -46,6 +46,3 @@ h1 a { background-image: url("./../../../img/wjfood_logoLong.png");
     padding:5px; margin-bottom: 5px; box-sizing: border-box;}
 
 /* ================================================================== */
-
-#linkBox { float:right; width:42.86%; height:auto;}
-#linkBox li { width:33.3333%;}
