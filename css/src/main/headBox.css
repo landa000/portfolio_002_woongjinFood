@@ -1,0 +1,9 @@
+/* main_all.css > headBox.css */
+
+#headBox { width:100vw; height:auto; background-color:var(--color-white);
+ position:fixed; top:0; left:0; z-index:1000; height:160px;}
+
+.head_wrap { position:relative; width:1080px; height:auto; min-height:160px;
+  margin:auto;}
+  .head_wrap::before { content:" "; display:block; width:100vw; height:160px;
+  position:absolute; top:0; left:0; z-index:-1; }
