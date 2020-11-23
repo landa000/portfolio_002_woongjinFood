@@ -1,1 +1,6 @@
-#viewBox { width:100%; height:auto; min-height:800px;}
+/* main_all.css > viewBox.css */
+
+#viewBox { position:relative;
+  width:100%; height:auto; min-height:850px;
+  padding-top:130px;}
+

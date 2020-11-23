@@ -1,2 +1,16 @@
-#footBox { width:100vw; height:auto; min-height:250px; 
+#footBox { position:relative;
+  width:100%; min-width:1024px; height:auto; min-height:180px; 
+  padding: 0 40px; box-sizing: border-box;
+  font-size:0.875rem;
   background-color: #ddd;}
+
+.company_info { float:left; }
+
+.site_map { float:left; }
+
+.address {float:left; }
+
+.sns { float:right;}
+
+.copyright { position:absolute; bottom:20px; left:50%; transform:translateX(-50%)}
+.copyright p { width:100%;}
