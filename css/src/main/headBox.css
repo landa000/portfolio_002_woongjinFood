@@ -1,7 +1,7 @@
 /* main_all.css > headBox.css */
 
 #headBox { width:100%; height:auto; 
- position:fixed; top:0; left:0; z-index:900; height:130px;}
+ position:fixed; top:0; left:0; z-index:1000; height:130px;}
 
 .head_wrap { position:relative; min-width:1024px; height:auto; min-height:130px; margin:auto;}
   .head_wrap:before, .head_wrap::before { content:" "; display:block; width:100vw; height:130px;
