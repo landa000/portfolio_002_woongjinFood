@@ -1,16 +1,18 @@
 #footBox { position:relative;
-  width:100%; min-width:1024px; height:auto; min-height:180px; 
-  padding: 0 40px; box-sizing: border-box;
+  width:100%; min-width:600px; height:auto; min-height:180px; 
+  padding: 25px 40px 0; box-sizing: border-box;
   font-size:0.875rem;
   background-color: #ddd;}
 
-.company_info { float:left; }
+.company_info { float:left; margin-right:50px;}
 
-.site_map { float:left; }
+.site_map { float:left; margin-right:30px;}
 
 .address {float:left; }
 
 .sns { float:right;}
+.sns li { float:left; width:30px; height:30px; margin-right:4px;
+  background-color: var(--color-dark-gray);}
 
 .copyright { position:absolute; bottom:20px; left:50%; transform:translateX(-50%)}
 .copyright p { width:100%;}

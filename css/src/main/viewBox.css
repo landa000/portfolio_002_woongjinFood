@@ -1,33 +1,39 @@
 /* main_all.css > viewBox.css */
 
 #viewBox { position:relative;
-  width:100%; height:auto;
+  width:100%; min-width:1024px; height:auto;
   padding-top:130px;}
 
-.viewImgBox { position:relative; width:100%; height:450px; overflow-x:hidden;
-  }
+.viewImgBox { position:relative; width:100%; height:600px; 
+  overflow:hidden;  }
 
-.viewImgBox ul { position:relative; width:600%; height:100%;}
+.viewImgBox ul { position:absolute; height:100%;}
 .viewImgBox li {  float:left; width:16.666666%; height:100%;
-  background-repeat: no-repeat; background-size: cover;
+  background-repeat: no-repeat; background-size: contain;
   background-position: 50% 50%;}
-.viewImgBox li > a { position:absolute; z-index:900; bottom:50px; right:30px;
-  width:100px; height:20px;
-  background-color: var(--color-green);}
+.viewImgBox li > a { position:absolute; z-index:-1; bottom:50px; right:30px;
+  width:100px; height:20px;}
 
 .view_indi { position:absolute; z-index:900;
-  bottom:30px; left:0; right:0; margin:auto;
-  width:220px; height:15px;}
+  bottom:30px; left:50%; right:0; transform:translateX(-50%);
+  width:280px; height:15px;}
 
-.view_indi ul { width:100%; height:100%;}
-.view_indi li { float:left; width:15px; height:100%; margin-right:16px;
+.view_indi ul { width:100%; height:auto;}
+.view_indi ul li { float:left;}
+.view_indi ul li > a { display:block; width:15px; height:15px; margin-right:16px;
   border-radius:9px; border:2px solid #fff;
-  background-color:var(--color-green); }
+  background-color:var(--color-green); 
+  transition:all 150ms ease-out;}
+.view_indi ul li:last-child > a { margin:0;}
+
+.view_indi li.action a { width:30px; 
+  transition:all 150ms ease-out; }
 
 .view_btn { position:absolute; z-index:900; 
   top:50%; left:0; right:0; margin:auto; transform:translateY(50%);
   width:90%; height:30px;}
-.view_btn > button { width:30px; height:30px;
-  background-color: #e55;}
+.view_btn > button { width:30px; height:30px; font-size:2.5rem;
+  color:var(--color-green); line-height:30px;}
+
 .next_btn { float:right;}
   

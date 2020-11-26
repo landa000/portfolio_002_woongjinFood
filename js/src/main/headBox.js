@@ -11,7 +11,7 @@
     {
       'titleNav':{ 'tname':'브랜드','tlink':'./brand.html','target':'_self'},
       'subNav'  :[{ 'subname':'음료','sublink':'#'},
-                  { 'subname':'차','sublink':'#'},
+                  { 'subname':'차/커피','sublink':'#'},
                   { 'subname':'건강식품','sublink':'#'},
                   { 'subname':'과자/당류','sublink':'#'},
                 ]

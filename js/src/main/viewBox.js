@@ -36,6 +36,11 @@
         'img' : {'imgCaption':'빅토리아 소개 이미지', 
                 'imgLink':'#', 'imgSrc':'view_mainImg_06.jpg'},
         'img_indi' : { 'indiLink':'#' }
+      },
+      {
+        'img' : {'imgCaption':'옥수수수염차 소개 이미지', 
+                'imgLink':'#', 'imgSrc':'view_mainImg_07.jpg'},
+        'img_indi' : { 'indiLink':'#' }
       }
   ];
 
@@ -58,12 +63,20 @@
     viewImg02 = viewImg[i].img_indi;
     viewIndi.append(viewImgList);
     viewIndiLi = viewIndi.children('li').eq(i);
-    viewIndiLi.append('<a href="'+ viewImg02.indiLink +'"><span>'+ 'indi' + "</span></a>");
+    viewIndiLi.append('<a href="'+ viewImg02.indiLink +'"><span>'+'indi'+"</span></a>");
   }
+
   var view_btn = $('.view_btn');
   var viewBtn = view_btn.children('button')
   // var viewNextBtn = viewBtn.children('.next_btn');
   // var viewPrevBtn = viewBtn.children('.prev_btn');
+
+  var viewImgLast = viewImgLi.eq(-1).clone();
+  viewImgBoxUl.prepend(viewImgLast);
+  var reViewImgLi = viewImgBoxUl.find('li');
+  var reImgLen = reViewImgLi.length;
+  viewImgBoxUl.css({'left':-100+'%','width': reImgLen*100+'%'});
+  reViewImgLi.css({'width': 100 / reImgLen+'%'});
 
   var permission = true;
   var slideN = 0;
@@ -71,6 +84,11 @@
 
   viewImgLi = viewImgBoxUl.children('li');
 
+  viewIndiLi = viewIndi.children('li');
+  viewIndiLi.eq(0).addClass('action');
+      // viewIndiLi.on('click',['a'],function(e){
+      //   e.preventDefault();
+      // });
   viewBtn.on('click', function(e){
     e.preventDefault();
     if(permission === true){ 
@@ -93,12 +111,16 @@
               slideN = viewImgLen -1 ;
               viewImgBoxUl.css({'marginLeft':slideN * -100+'%'});
             }
+            
           setTimeout(function(){
             permission = true;
           },timed/4);
+          viewIndiLi.eq(slideN).siblings().removeClass('action');
+          viewIndiLi.eq(slideN).addClass('action');
         });
       }
-      console.log(slideN);
+
     });//viewBtn.on
+
 
 })(jQuery);
