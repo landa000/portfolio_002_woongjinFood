@@ -45,7 +45,6 @@
   var brandTag = '<li><dl><dd></dd><dt></dt></dl></li>';
   var url ='../../img/wjfood_bi/';
   var bListLen = brandList.length;
-  console.log(bListLen);
 
   var k,brandLi,brandDl,brandDt,brandDd;
 

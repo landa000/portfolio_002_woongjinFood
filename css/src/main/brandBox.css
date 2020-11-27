@@ -2,22 +2,22 @@
 
 #brandBox { width:100%; height:auto; padding:5%; 
   box-sizing:border-box;
-  background-image:linear-gradient(#f4ecbd,#7fa23a);}
+  background-image:linear-gradient(#fefff0,#f4ecbd);}
 
-#brandBox h2 { width:300px; height:auto; margin:auto;
+#brandBox h2 { width:100px; height:auto; margin:auto; margin-bottom:30px;
   font-size: 24px;}
 
-.brandArea { width:100%; max-width:1024px; height:auto; margin:auto;}
+.brandArea { width:auto; max-width:1024px; height:auto; margin:auto;}
 
 .brandArea ul { width:100%; height:392px; padding:8px; overflow: hidden;
   background-color: rgba(255,255,255,0.3);
   transition:all 400ms ease;}
   
-.brandArea ul.moreview { height:auto;
+.brandArea ul.moreview { height:784px;
   transition:all 400ms ease;}
 
-.brandArea ul > li { float:left; width:240px; height:180px;
-  margin:8px; background-color: #fff;
+.brandArea ul > li { float:left; width:23.4375%; min-width:200px; height:180px;
+  margin: 8px 0.78125%; background-color: #fff;
   background-repeat: no-repeat; background-size: auto 100px ;
   background-position: 50% 50%;}
 
@@ -30,6 +30,7 @@
   text-align: center; line-height:170%;}
 
 .brandArea li:hover > dl { opacity:1; background-color: rgba(255,255,255,0.85);
+  border:1px solid #ddd;
   transition:all 200ms linear;}
 
 .brandList_btn { display:block; width:180px; height:40px; 

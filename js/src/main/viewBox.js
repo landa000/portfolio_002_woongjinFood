@@ -7,38 +7,31 @@
   indicator.css({'backgroundColor':'#59f'});
 
   var viewImg = [
-      {
-        'img' : {'imgCaption':'하늘보리 소개 이미지', 
+      { 'img' : {'imgCaption':'하늘보리 소개 이미지', 
                 'imgLink':'#', 'imgSrc':'view_mainImg_01.jpg'},
         'img_indi' : { 'indiLink':'#' }
       },
-      {
-        'img' : {'imgCaption':'자연에 소개 이미지', 
+      { 'img' : {'imgCaption':'자연에 소개 이미지', 
                 'imgLink':'#', 'imgSrc':'view_mainImg_02.jpg'},
         'img_indi' : { 'indiLink':'#' }
       },
-      {
-        'img' : {'imgCaption':'아침햇살 소개 이미지', 
+      { 'img' : {'imgCaption':'아침햇살 소개 이미지', 
                 'imgLink':'#', 'imgSrc':'view_mainImg_03.jpg'},
         'img_indi' : { 'indiLink':'#' }
       },
-      {
-        'img' : {'imgCaption':'티즐 소개 이미지', 
+      { 'img' : {'imgCaption':'티즐 소개 이미지', 
                 'imgLink':'#', 'imgSrc':'view_mainImg_04.jpg'},
         'img_indi' : { 'indiLink':'#' }
       },
-      {
-        'img' : {'imgCaption':'초록매실 소개 이미지', 
+      { 'img' : {'imgCaption':'초록매실 소개 이미지', 
                 'imgLink':'#', 'imgSrc':'view_mainImg_05.jpg'},
         'img_indi' : { 'indiLink':'#' }
       },
-      {
-        'img' : {'imgCaption':'빅토리아 소개 이미지', 
+      { 'img' : {'imgCaption':'빅토리아 소개 이미지', 
                 'imgLink':'#', 'imgSrc':'view_mainImg_06.jpg'},
         'img_indi' : { 'indiLink':'#' }
       },
-      {
-        'img' : {'imgCaption':'옥수수수염차 소개 이미지', 
+      { 'img' : {'imgCaption':'옥수수수염차 소개 이미지', 
                 'imgLink':'#', 'imgSrc':'view_mainImg_07.jpg'},
         'img_indi' : { 'indiLink':'#' }
       }
@@ -71,7 +64,7 @@
   // var viewNextBtn = viewBtn.children('.next_btn');
   // var viewPrevBtn = viewBtn.children('.prev_btn');
 
-  var viewImgLast = viewImgLi.eq(-1).clone();
+  var viewImgLast = viewImgLi.eq(-1).clone(true);
   viewImgBoxUl.prepend(viewImgLast);
   var reViewImgLi = viewImgBoxUl.find('li');
   var reImgLen = reViewImgLi.length;

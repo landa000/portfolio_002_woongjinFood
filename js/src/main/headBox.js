@@ -3,9 +3,9 @@
 (function($){
   var navBox = [
     {
-      'titleNav':{ 'tname':'기업소개','tlink':'#','target':'_self'},
+      'titleNav':{ 'tname':'기업소개','tlink':'./company.html','target':'_self'},
       'subNav'  :[{ 'subname':'웅진식품','sublink':'#'},
-                  { 'subname':'웅진식품','sublink':'#'}
+                  { 'subname':'CI소개','sublink':'#'}
                 ]
     },
     {
@@ -66,7 +66,6 @@
         } 
       }
 
-
       var linkBoxSel = $('#linkBox');
       var linkBoxSelUl = linkBoxSel.children('ul');
       var linkLen = linkBox.length;
@@ -76,16 +75,20 @@
       var linkList = '<li><a href="'+ lNav.tlink +'"'+'target="'+lNav.target+'">'+lNav.tname+'</a></li>';
       linkBoxSelUl.append(linkList);
     }
-   
+
+    navDt = navBoxSelUl.find('dt');
+    navDd = navBoxSelUl.find('dd');
+
+    navDtFindLink = navDt.find('a');
+    navDdFindLink = navDd.find('a');
+
+    var navSlideDown = function(){ navDd.stop().slideDown();}
+    var navSlideUp = function(){ navDd.stop().slideUp();}
+
+    navBoxSel.on({
+      'mouseenter': navSlideDown,
+      'mouseleave': navSlideUp
+    });
 
 
-      // {
-      //   'titleNav':{ 'tname':'e-shop','tlink':'#','target':'_blank'}
-      // },
-      // {
-      //   'titleNav':{ 'tname':'WoW','tlink':'#','target':'_blank'}
-      // },
-      // {
-      //   'titleNav':{ 'tname':'채용','tlink':'#','target':'_blank'}
-      // }
-})(jQuery);
+  })(jQuery);
