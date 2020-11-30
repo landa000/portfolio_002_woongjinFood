@@ -1,3 +1,4 @@
 
 
-#wrap { width:100%; height:auto; min-height:50rem;}
+#wrap { width:100%; height:auto; min-height:50rem; overflow-x:hidden;
+  margin:0; padding:0;}

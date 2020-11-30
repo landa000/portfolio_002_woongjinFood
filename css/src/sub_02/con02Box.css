@@ -1,0 +1,4 @@
+/* sub_02 > con02Box.css */
+
+#con02Box { width:100%; min-width:1024px; height:650px;
+  background-color: var(--color-light-green);}
