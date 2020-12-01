@@ -4,7 +4,8 @@
   box-sizing:border-box;
   background-image:linear-gradient(#fefff0,#f4ecbd);}
 
-#brandBox h2 { width:100px; height:auto; margin:auto; margin-bottom:30px;
+#brandBox h2 { height:auto; margin:auto; margin-bottom:30px;
+  text-align: center;
   font-size: 24px;}
 
 .brandArea { width:auto; max-width:1024px; height:auto; margin:auto;}

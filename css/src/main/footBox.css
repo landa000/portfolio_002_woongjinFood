@@ -1,14 +1,16 @@
 #footBox { position:relative;
-  width:100%; min-width:600px; height:auto; min-height:180px; 
-  padding: 25px 40px 0; box-sizing: border-box;
+  width:100%; min-width:600px; height:auto; min-height:200px; 
+  padding: 25px 60px 0; box-sizing: border-box;
   font-size:0.875rem;
   background-color: #ddd;}
 
 .company_info { float:left; margin-right:50px;}
 
 .site_map { float:left; margin-right:30px;}
+.site_map li { margin-bottom:5px;}
 
-.address {float:left; }
+.address {float:left;}
+.address li {margin-bottom:5px;}
 
 .sns { float:right;}
 .sns li { float:left; width:30px; height:30px; margin-right:4px;

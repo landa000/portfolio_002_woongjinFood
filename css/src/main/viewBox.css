@@ -16,9 +16,9 @@
 
 .view_indi { position:absolute; z-index:900;
   bottom:30px; left:50%; right:0; transform:translateX(-50%);
-  width:280px; height:15px;}
+  width:245px; height:15px;}
 
-.view_indi ul { width:100%; height:auto;}
+.view_indi ul {height:auto;}
 .view_indi ul li { float:left;}
 .view_indi ul li > a { display:block; width:15px; height:15px; margin-right:16px;
   border-radius:9px; border:2px solid #fff;
