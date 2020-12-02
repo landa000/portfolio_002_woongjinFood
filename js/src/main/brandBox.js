@@ -37,6 +37,18 @@
       },
       { 'brand' : { 'brandname':'BABA','brandlink':'./brand.html',
                    'brandImglink':'0204_BI.jpg','brandcaption':'바쁜 아침, 햇살 한 잔.<br />대한민국 대표 쌀 음료'}
+      },
+      { 'brand' : { 'brandname':'가야농장','brandlink':'./brand.html',
+                   'brandImglink':'0104_BI.png','brandcaption':'바쁜 아침, 햇살 한 잔.<br />대한민국 대표 쌀 음료'}
+      },
+      { 'brand' : { 'brandname':'장쾌삼','brandlink':'./brand.html',
+                   'brandImglink':'0301_BI.jpg','brandcaption':'바쁜 아침, 햇살 한 잔.<br />대한민국 대표 쌀 음료'}
+      },
+      { 'brand' : { 'brandname':'잘자란 배도라지','brandlink':'./brand.html',
+                   'brandImglink':'0302_BI.png','brandcaption':'바쁜 아침, 햇살 한 잔.<br />대한민국 대표 쌀 음료'}
+      },
+      { 'brand' : { 'brandname':'맑게 우려낸 누룽지','brandlink':'./brand.html',
+                   'brandImglink':'0206_BI.png','brandcaption':'바쁜 아침, 햇살 한 잔.<br />대한민국 대표 쌀 음료'}
       }
   ]
 
@@ -57,7 +69,7 @@
     brandDd = brandDl.children('dd');
     brandLi.css({'backgroundImage':'url('+url+brandArr.brandImglink+')'});
     brandDt.append('<a href="'+brandArr.brandlink+'"><span>'+ '바로가기' +'</span></a>');
-    brandDd.append('<h3>'+ brandArr.brandcaption +'</h3>');
+    brandDd.append('<span>'+ brandArr.brandcaption +'</span>');
   }
 
   var brandMoreBtn = $('.brandList_btn');
@@ -67,12 +79,8 @@
     var viewMore = itB.prev().attr('class')
 
     brandUl.toggleClass('moreview');
+    brandMoreBtn.find('i').toggleClass('moreview');
 
   });
-
-
-
-
-
 
 })(jQuery);

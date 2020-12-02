@@ -2,28 +2,24 @@
 
 (function($){
   var navBox = [
-    {
-      'titleNav':{ 'tname':'기업소개','tlink':'./company.html','target':'_self'},
+    { 'titleNav':{ 'tname':'기업소개','tlink':'./company.html','target':'_self'},
       'subNav'  :[{ 'subname':'웅진식품','sublink':'#'},
                   { 'subname':'CI소개','sublink':'#'}
                 ]
     },
-    {
-      'titleNav':{ 'tname':'브랜드','tlink':'./brand.html','target':'_self'},
+    { 'titleNav':{ 'tname':'브랜드','tlink':'./brand.html','target':'_self'},
       'subNav'  :[{ 'subname':'음료','sublink':'#'},
                   { 'subname':'차/커피','sublink':'#'},
                   { 'subname':'건강식품','sublink':'#'},
                   { 'subname':'과자/당류','sublink':'#'},
                 ]
     },
-    {
-      'titleNav':{ 'tname':'새소식','tlink':'#','target':'_self'},
+    { 'titleNav':{ 'tname':'새소식','tlink':'#','target':'_self'},
       'subNav'  :[{ 'subname':'이벤트','sublink':'#'},
                   { 'subname':'건강한 SNS','sublink':'#'}
                 ]
     },
-    {
-      'titleNav':{ 'tname':'고객센터','tlink':'#','target':'_self'},
+    { 'titleNav':{ 'tname':'고객센터','tlink':'#','target':'_self'},
       'subNav'  :[{ 'subname':'공지사항','sublink':'#'},
                   { 'subname':'공시/공고','sublink':'#'},
                   { 'subname':'FnQ','sublink':'#'},
@@ -32,19 +28,15 @@
     },
   ];
   var linkBox = [
-    {
-      'LinkNav':{ 'tname':'e-shop','tlink':'https://eshop.wjfood.co.kr:451/index.aspx','target':'_blank'}
+    { 'LinkNav':{ 'tname':'e-shop','tlink':'https://eshop.wjfood.co.kr:451/index.aspx','target':'_blank'}
     },
-    {
-      'LinkNav':{ 'tname':'WoW','tlink':'https://www.wjfood.co.kr/Wow/WowMain.aspx','target':'_blank'}
+    { 'LinkNav':{ 'tname':'WoW','tlink':'https://www.wjfood.co.kr/Wow/WowMain.aspx','target':'_blank'}
     },
-    {
-      'LinkNav':{ 'tname':'채용','tlink':'#https://wjfood.recruiter.co.kr/appsite/company/index','target':'_blank'}
+    { 'LinkNav':{ 'tname':'채용','tlink':'#https://wjfood.recruiter.co.kr/appsite/company/index','target':'_blank'}
     }
   ];
 
   var navList = '<li><dl><dt></dt><dd></dd></dl></li>';
-
   var navBoxSel = $('#navBox');
   var navBoxSelUl = navBoxSel.children('ul');
   var navLen = navBox.length;
@@ -72,7 +64,8 @@
 
     for( navK=0; navK<linkLen; navK+=1){
       lNav = linkBox[navK].LinkNav;
-      var linkList = '<li><a href="'+ lNav.tlink +'"'+'target="'+lNav.target+'">'+lNav.tname+'</a></li>';
+      var linkList = 
+      '<li><a href="'+ lNav.tlink +'"'+'target="'+lNav.target+'">'+lNav.tname+'</a></li>';
       linkBoxSelUl.append(linkList);
     }
 
@@ -82,13 +75,13 @@
     navDtFindLink = navDt.find('a');
     navDdFindLink = navDd.find('a');
 
-    var navSlideDown = function(){ navDd.stop().slideDown();}
-    var navSlideUp = function(){ navDd.stop().slideUp();}
+    var navSlideDown = function(){ 
+      navDd.stop().slideDown();  }
+    var navSlideUp = function(){ 
+      navDd.stop().slideUp();  }
 
     navBoxSel.on({
-      'mouseenter': navSlideDown,
-      'mouseleave': navSlideUp
+      'mouseenter': navSlideDown, 'mouseleave': navSlideUp
     });
-
 
   })(jQuery);

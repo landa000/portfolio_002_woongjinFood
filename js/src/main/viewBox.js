@@ -116,27 +116,29 @@
     viewIndiLi.on('click',function(e){
       e.preventDefault();
       var itI = $(this);
-      j = itI.index();
+      slideN = itI.index();
 
-      viewImgBoxUl.stop().animate({'marginLeft': j * -100+'%'});
-      viewIndi.children('li').eq(j).siblings().removeClass('action');
-      viewIndi.children('li').eq(j).addClass('action');
+      viewImgBoxUl.stop().animate({'marginLeft': slideN * -100+'%'});
+      viewIndi.children('li').eq(slideN).siblings().removeClass('action');
+      viewIndi.children('li').eq(slideN).addClass('action');
     });
+
+    // slideShow
 
     var startInterval, stopInterval, k;
 
     var SlideStart = function(){
       startInterval = setInterval(function(){
-        slideN += 1
+        slideN += 1;
         viewImgBoxUl.stop().animate({'marginLeft': slideN * -100+'%'},function(){
           if(slideN>=viewImgLen-1){
             slideN = -1;
-            viewImgBoxUl.css({'marginLeft':k*-100+'%'});
+            viewImgBoxUl.css({'marginLeft':slideN*-100+'%'});
           }
         });
         viewIndi.children('li').eq(slideN).siblings().removeClass('action');
         viewIndi.children('li').eq(slideN).addClass('action');
-      }, timed*9);
+      }, timed*10);
     }
 
     stopInterval = function(){
