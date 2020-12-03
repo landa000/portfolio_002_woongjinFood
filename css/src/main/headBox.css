@@ -1,17 +1,16 @@
 /* main_all.css > headBox.css */
 
-#headBox { width:100%; height:auto; 
+#headBox { width:100%; height:auto; background-color:var(--color-white); 
  position:fixed; top:0; left:0; z-index:1000; height:130px;}
 
 .head_wrap { position:relative; min-width:1024px; height:auto; min-height:130px; margin:auto;}
-  .head_wrap:before, .head_wrap::before { content:" "; display:block; width:100vw; height:130px;
-  position:absolute; top:0; left:0; z-index:-2; background-color:var(--color-white); }
 
 #unbBox { position:relative; width:100%; height:auto;}
+#unbBox button { display:none;}
 
 h1 { position:relative; z-index:1000; margin:auto; width:160px; height:80px;}
 h1 a { background-image: url("./../../../img/wjfood_logoLong.png");
-    background-repeat: no-repeat; background-size: 100%; background-position: 50% 50%;}
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;}
 
 /* ================================================================== */
 
@@ -31,8 +30,8 @@ h1 a { background-image: url("./../../../img/wjfood_logoLong.png");
   position:absolute; top:80px; left:0; z-index:-2; width:100vw; height:50px; 
   background-color: var( --color-light-green);}
 
-.gnbBox { position:relative; width:80%; height:auto; margin:auto;
-  background-color: rgba(250,250,250,0.9);}
+.gnbBox { position:relative; width:80%; height:auto; margin:auto;  
+  background-color: rgba(250,250,250,0.9); }
 
 .gnbBox li { float:left; width:25%; height:auto; }
 
@@ -54,3 +53,40 @@ h1 a { background-image: url("./../../../img/wjfood_logoLong.png");
 
 #navBox:hover::before, .gnbBox:hover dt a { 
   background-color: var( --color-green); color:var(--color-white); transition:all 200ms ease;}
+
+/* =================================================================== */
+/* =================================================================== */
+
+@media screen and (max-width:1023px) {
+
+  #headBox { height:auto;}
+  .head_wrap { padding:10px 0; min-width:0; min-height:0;
+    }
+
+  h1 { width:160px; height:40px;}
+
+  #unbBox button { display:block; position: absolute; top:0; right:14px; width:36px; height:36px;
+    background-color: var(--color-green);}
+
+    #navBox, .unb_link, #linkBox { 
+    display:none; }
+
+  #navBox { position: absolute; top:60px; width:100vw; height:100vh;
+    background-color: rgba(32,31,38,0.5);}
+  #navBox:before, #navBox::before { display:none;}
+  #navBox:hover::before, .gnbBox:hover dt a { background-color: rgba(250,250,250,0); }
+
+  .gnbBox { width:80%; height:auto; background-color: rgba(250,250,250,0); }
+  .gnbBox li { width:100%;}
+  .gnbBox dl { width:100%; height:auto; }
+  .gnbBox dt { width:100%; height:40px;}
+  .gnbBox dt > a { width:100%; height:40px; text-indent: 5%; line-height:40px;
+    color:#fff;
+    border-bottom:1px solid #fff;
+    background-color: rgba(250,250,250,0);}
+  .gnbBox dd { display:none;}
+  .gnbBox dd > a { 
+    background-color: rgba(250,250,250,0);}
+
+  
+}

@@ -16,10 +16,10 @@
    
   // }
 
-  if(nowW === deviceType[0]){
-    headBox.load( url + 'headBox_mobile.html');
-  }else{
-    headBox.load( './module/headBox.html')
-  }
+  // if(nowW === deviceType[0]){
+  //   headBox.load( url + 'headBox_mobile.html');
+  // }else{
+  //   headBox.load( './module/headBox.html')
+  // }
 
 })(jQuery);

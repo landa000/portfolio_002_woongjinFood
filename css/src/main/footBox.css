@@ -1,5 +1,5 @@
 #footBox { position:relative;
-  width:100%; min-width:600px; height:auto; min-height:200px; 
+  width:100%; min-width:550px; height:auto; min-height:200px; 
   padding: 25px 60px 0; box-sizing: border-box;
   font-size:0.875rem;
   background-color: #ddd;}
