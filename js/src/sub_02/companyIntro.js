@@ -2,7 +2,7 @@
 
 (function($){
 
-  var comIntro = $('.companyIntro');
+  var comIntro = $('.Intro');
   var subList = '<h2></h2>';
 
   comIntro.append(subList);

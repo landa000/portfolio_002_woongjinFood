@@ -58,6 +58,8 @@
         } 
       }
 
+// ==============================================================
+
       var linkBoxSel = $('#linkBox');
       var linkBoxSelUl = linkBoxSel.children('ul');
       var linkLen = linkBox.length;
@@ -69,19 +71,31 @@
       linkBoxSelUl.append(linkList);
     }
 
-    navDt = navBoxSelUl.find('dt');
-    navDd = navBoxSelUl.find('dd');
+// ==============================================================
 
-    navDtFindLink = navDt.find('a');
-    navDdFindLink = navDd.find('a');
+  navDt = navBoxSelUl.find('dt');
+  navDd = navBoxSelUl.find('dd');
 
-    var navSlideDown = function(){ 
-      navDd.stop().slideDown();  }
-    var navSlideUp = function(){ 
-      navDd.stop().slideUp();  }
+  navDtFindLink = navDt.find('a');
+  navDdFindLink = navDd.find('a');
 
-    navBoxSel.on({
-      'mouseenter': navSlideDown, 'mouseleave': navSlideUp
-    });
+  var navSlideDown = function(){ 
+    navDd.stop().slideDown();  }
+  var navSlideUp = function(){ 
+    navDd.stop().slideUp();  }
+
+  navBoxSel.on({
+    'mouseenter': navSlideDown, 'mouseleave': navSlideUp
+  });
+
+// ==============================================================
+
+  var unbBox = $('#unbBox');
+  var headMobBtn = unbBox.find('.mobile_btn');
+
+  headMobBtn.on('click',function(e){
+    e.preventDefault();
+    navBoxSel.fadeToggle();
+  });
 
   })(jQuery);
