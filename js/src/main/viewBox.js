@@ -44,7 +44,7 @@
   var viewIndi = $('.view_indi ul');
 
   var i,viewImgLi,viewImg01,viewImg02,viewIndiLi,j;
-  var url ='../../img/view_img/';
+  var url ='../img/view_img/';
 
   for(i=0;i<viewImgLen;i+=1){
     viewImgBoxUl.append(viewImgList);
