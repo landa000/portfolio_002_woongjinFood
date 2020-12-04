@@ -5,9 +5,6 @@
   var nowW = deviceSize();
   var deviceType = ['mobile','tablet','laptop','pc','pcfull'];
 
-  var url = './module/rwd/';
-  var headBox = $('#headBox');
-
   console.log(nowW);
 
   // =====================================
