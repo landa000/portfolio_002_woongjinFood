@@ -50,5 +50,3 @@ var deviceSize = function(){
   return resultDevice;
 
 };
-
-console.log(deviceSize);
