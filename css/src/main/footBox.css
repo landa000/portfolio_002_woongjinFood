@@ -12,16 +12,28 @@
 .address {float:left;}
 .address li {margin-bottom:5px;}
 
-.sns { float:right;}
+.sns { float:right; height:auto;}
 .sns li { float:left; width:30px; height:30px; margin-right:20px;
   background-repeat: no-repeat; background-position: 50% 50%;
   background-size: contain;}
 
-.sns li:nth-child(1) { background-image: url("../../../img/sns_icon/sns_blog.png");
-  border-radius: 8px;}
+.sns li:nth-child(1) { background-image: url("../../../img/sns_icon/sns_blog.png"); border-radius: 8px;}
 .sns li:nth-child(2) { background-image: url("../../../img/sns_icon/sns_instagram.png");}
 .sns li:nth-child(3) { background-image: url("../../../img/sns_icon/sns_facebook.png");}
 .sns li:nth-child(4) { background-image: url("../../../img/sns_icon/sns_youtube.png");}
 
-.copyright { position:absolute; bottom:20px; left:50%; transform:translateX(-50%)}
-.copyright p { width:100%;}
+.copyright { position:absolute; bottom:20px; left:50%; transform:translateX(-50%); }
+.copyright p { width:250px; display: inline-block; }
+
+/* ========================================================== */
+/* ========================================================== */
+
+@media screen and ( max-width:439px ){
+  #footBox { min-width:300px; padding: 25px 10px 0;}
+
+  .company_info { display:none;}
+
+  .sns li { width:20px; height:20px; margin-right:12px;}
+
+  .copyright { bottom:12px;}
+}

@@ -47,12 +47,7 @@
     con01Add = con01Arr[n].intro;
     con01Dd.append('<h3>'+con01Add.title+'</h3>'+'<br />'+'<span>'+con01Add.subtext+'</span>');
     con01Dt.css({'backgroundImage':'url("'+con01Add.iconImg+'")'});
-
   }
-
-  
-  
-
                   
 
 })(jQuery);

@@ -95,7 +95,7 @@
 
   headMobBtn.on('click',function(e){
     e.preventDefault();
-    navBoxSel.fadeToggle();
+    navBoxSel.stop().fadeToggle();
   });
 
   })(jQuery);

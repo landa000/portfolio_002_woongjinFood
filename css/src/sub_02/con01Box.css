@@ -6,7 +6,7 @@
 
 #con01Box li { float:left; width:280px; height:auto;
   margin:0 4px;}
-#con01Box dl { position:relative;
+#con01Box dl { position:relative; top:90px; transition:top 200ms ease;
   width:100%; height:100%; margin:0 4px;
   border:1px solid var(--color-light-gray);}
 
@@ -19,3 +19,5 @@
   padding: 100px 12px 0; box-sizing:border-box;
   font-size: 1rem;}
 #con01Box dl > dd > h3 { text-align:center; }
+
+#con01Box dl:hover { top:45px; transition:top 200ms ease;}
