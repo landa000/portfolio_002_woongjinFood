@@ -2,6 +2,6 @@
 
 @import url("../main/wrap.css");
 @import url("../main/headBox.css");
-@import url();
-@import url();
+@import url("./categoryBox.css");
+@import url("./productBox.css");
 @import url("../main/footBox.css");

@@ -2,13 +2,13 @@
 
 (function($){
 
-  var indicator = $(".indicator");
+var indicator = $(".indicator");
 
-  $.ajax({
-    url:'../data/viewBox_data.json',
-    dataType:'json',
-    context: document.body
-  }).done(function(data){
+$.ajax({
+  url:'../data/viewBox_data.json',
+  dataType:'json',
+  context: document.body
+}).done(function(data){
 
     var viewImg = data;
 
@@ -89,44 +89,43 @@
 
       });//viewBtn.on
 
-      viewIndiLi.on('click',function(e){
-        e.preventDefault();
-        var itI = $(this);
-        slideN = itI.index();
+    viewIndiLi.on('click',function(e){
+      e.preventDefault();
+      var itI = $(this);
+      slideN = itI.index();
 
-        viewImgBoxUl.stop().animate({'marginLeft': slideN * -100+'%'});
+      viewImgBoxUl.stop().animate({'marginLeft': slideN * -100+'%'});
+      viewIndi.children('li').eq(slideN).siblings().removeClass('action');
+      viewIndi.children('li').eq(slideN).addClass('action');
+    });
+
+    // slideShow
+
+    var startInterval, stopInterval, k;
+
+    var SlideStart = function(){
+      startInterval = setInterval(function(){
+        slideN += 1;
+        viewImgBoxUl.stop().animate({'marginLeft': slideN * -100+'%'},function(){
+          if(slideN>=viewImgLen-1){
+            slideN = -1;
+            viewImgBoxUl.css({'marginLeft':slideN*-100+'%'});
+          }
+        });
         viewIndi.children('li').eq(slideN).siblings().removeClass('action');
         viewIndi.children('li').eq(slideN).addClass('action');
-      });
+      }, timed*10);
+    }
 
-      // slideShow
+    stopInterval = function(){
+      clearInterval(startInterval);
+    }
 
-      var startInterval, stopInterval, k;
+    SlideStart();
 
-      var SlideStart = function(){
-        startInterval = setInterval(function(){
-          slideN += 1;
-          viewImgBoxUl.stop().animate({'marginLeft': slideN * -100+'%'},function(){
-            if(slideN>=viewImgLen-1){
-              slideN = -1;
-              viewImgBoxUl.css({'marginLeft':slideN*-100+'%'});
-            }
-          });
-          viewIndi.children('li').eq(slideN).siblings().removeClass('action');
-          viewIndi.children('li').eq(slideN).addClass('action');
-        }, timed*10);
-      }
-
-      stopInterval = function(){
-        clearInterval(startInterval);
-      }
-
-      SlideStart();
-
-      viewImgBox.on({
-        'mouseenter' : stopInterval,
-        'mouseleave' : SlideStart
-      });
-
+    viewImgBox.on({
+      'mouseenter' : stopInterval,
+      'mouseleave' : SlideStart
+    });
   });    
 })(jQuery);

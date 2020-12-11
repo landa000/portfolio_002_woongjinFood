@@ -1,0 +1,41 @@
+[
+  { "drink"  : [
+    { "brand":"자연은", "name":"자연은 알로에", "imgFile":"nature_aloe_360.jpg"},
+    { "brand":"자연은", "name":"자연은 사과", "imgFile":"nature_apple_360.jpg"},
+    { "brand":"자연은", "name":"자연은 블루베리", "imgFile":"nature_bb_360.jpg"},
+    { "brand":"자연은", "name":"자연은 당근", "imgFile":"nature_carrot_360.jpg"},
+    { "brand":"자연은", "name":"자연은 포도", "imgFile":"nature_grape_360.jpg"},
+    { "brand":"자연은", "name":"자연은 망고", "imgFile":"nature_mango_360.jpg"},
+    { "brand":"자연은", "name":"자연은 오렌지", "imgFile":"nature_oran_360.jpg"},
+    { "brand":"자연은", "name":"자연은 석류", "imgFile":"nature_pg_360.jpg"},
+    { "brand":"자연은", "name":"자연은 제주감귤", "imgFile":"nature_tan_360.jpg"},
+    { "brand":"자연은", "name":"자연은 토마토", "imgFile":"nature_tamato_360.jpg"}
+    { "brand":"자연은", "name":"자연은 청포도", "imgFile":"nature_wg_360.jpg"},
+    { "brand":"가야농장", "name":"가야농장", "imgFile":""},
+    { "brand":"가야농장", "name":"가야농장", "imgFile":""},
+    { "brand":"가야농장", "name":"가야농장", "imgFile":""},
+    { "brand":"가야농장", "name":"가야농장", "imgFile":""},
+    { "brand":"가야농장", "name":"가야농장", "imgFile":""},
+    { "brand":"가야농장", "name":"가야농장", "imgFile":""},
+      ]
+    },
+  { "teaCoffee"    : [
+    { "brand":"", "name":"", "imgFile":""},
+    { "brand":"", "name":"", "imgFile":""},
+    { "brand":"", "name":"", "imgFile":""},
+    { "brand":"", "name":"", "imgFile":""},
+    { "brand":"", "name":"", "imgFile":""},
+    { "brand":"", "name":"", "imgFile":""}
+      ] 
+    },
+  { "health" : [
+    { "brand":"", "name":"", "imgFile":""},
+    { "brand":"", "name":"", "imgFile":""},
+    { "brand":"", "name":"", "imgFile":""}
+      ] 
+    },
+  { "other"  : [
+    { "brand":"", "name":"", "imgFile":""}
+      ] 
+    }
+]
