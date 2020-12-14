@@ -2,9 +2,7 @@
 
 #headBox { width:100%; height:auto; background-color:var(--color-white); 
  position:fixed; top:0; left:0; z-index:1000; height:130px;}
-
 .head_wrap { position:relative; min-width:1024px; height:auto; min-height:130px; margin:auto;}
-
 #unbBox { position:relative; width:100%; height:auto;}
 #unbBox button { display:none;}
 
@@ -18,7 +16,6 @@ h1 a { background-image: url("./../../../img/wjfood_logoLong.png");
    height:auto; transform:translateY(-50%);}
 #linkBox ul { height:100%;}
 #linkBox li a { float:left; margin:0 2%; font-size: 0.875rem; font-weight: bold;}
-
 .unb_link { position:absolute; top:50%; right:0; 
   width:320px; height:auto; transform:translateY(-50%);}
 .unb_link > li a {  float:left; margin:0 2%; font-size: 0.875rem; font-weight: bold;}
@@ -30,22 +27,16 @@ h1 a { background-image: url("./../../../img/wjfood_logoLong.png");
   position:absolute; top:80px; left:0; z-index:-2; width:100vw; height:50px; 
   background-color: var( --color-light-green);}
 
-.gnbBox { position:relative; width:80%; height:auto; margin:auto;  
-  background-color: rgba(250,250,250,0.9); }
-
+.gnbBox { position:relative; width:80%; height:auto; margin:auto; background-color: rgba(250,250,250,0.9); }
 .gnbBox li { float:left; width:25%; height:auto; }
-
 .gnbBox dl { width:100%; height:auto; }
-
 .gnbBox dt { width:100%; height:auto; }
 .gnbBox dt > a { transition:all 200ms ease;  display:block; width:100%; height:50px; 
   background-color: var( --color-light-green); font-size: 1.2rem; font-weight:700;
   line-height:50px; text-indent: 30%;  text-align: left; color:var(--color-black);}
-
   .gnbBox dd{ width:100%; height:auto;  display: none; 
     padding:16px 0; box-sizing:border-box;
     text-align: left; text-indent:30%; font-size:1.125rem;}
-
   .gnbBox dd > a { display: block; width:100%; height:auto; 
     padding:5px; margin-bottom: 5px; box-sizing: border-box;}
 

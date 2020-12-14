@@ -1,18 +1,19 @@
 /* main > submenuBox.css */
 
-#submenuBox { width:100vw; height:28vw; max-height:380px;
+#submenuBox { position:relative; width:100vw; height:28vw; max-height:380px;
   padding-top:4vw; box-sizing: border-box;}
  
-.submenuList { width:100%; margin:auto; }
- 
-.submenuList ul { width:76vw; min-width:755px; max-width:1040px; height:auto; margin:auto;}
 
-.submenuList ul > li { float:left; width:16vw; min-width:165px; max-width:220px;  
-  height:16vw; min-height:165px; max-height:220px;  
-  margin:0 1vw;
-  border:1px solid var(--color-light-green);  box-sizing:border-box;}
+.submenuList { width:100%; height:auto; }
 
-.submenuList dl { position:relative; width:100%; height:100%; 
+.submenuList ul { height:auto; }
+
+.submenuList ul > li { float:left;
+  width:13vw; min-width:140px; max-width:220px;
+  height:13vw; min-height:140px; max-height:220px; margin:0 6px;
+  border:1px solid var(--color-light-green);}
+
+.submenuList dl { position:relative; width:100%; height:100%;
 background-repeat: no-repeat; background-position: 50% 50%;
 background-size: 35%;
 transition:all 250ms ease;}
@@ -32,3 +33,4 @@ transition:all 250ms ease;}
   .submenuList  ul > li { width:100%; min-width:300px; max-width:0; height: 8vw; min-height:40px; margin:10px 0;}
   .submenuList  dl { float:left; }
 }
+

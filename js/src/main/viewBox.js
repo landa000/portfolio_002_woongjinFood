@@ -12,7 +12,6 @@ $.ajax({
 
     var viewImg = data;
 
-
     var viewImgList = "<li></li>";
     var viewImgBox = $('.viewImgBox');
     var viewImgBoxUl = viewImgBox.children('ul');
@@ -37,8 +36,6 @@ $.ajax({
 
     var view_btn = $('.view_btn');
     var viewBtn = view_btn.children('button')
-    // var viewNextBtn = viewBtn.children('.next_btn');
-    // var viewPrevBtn = viewBtn.children('.prev_btn');
 
     var viewImgLast = viewImgLi.eq(-1).clone(true);
     viewImgBoxUl.prepend(viewImgLast);
@@ -52,7 +49,6 @@ $.ajax({
     var timed = 300;
 
     viewImgLi = viewImgBoxUl.children('li');
-
     viewIndiLi = viewIndi.children('li');
     viewIndiLi.eq(0).addClass('action');
 
@@ -86,7 +82,6 @@ $.ajax({
             viewIndiLi.eq(slideN).addClass('action');
           });
         }
-
       });//viewBtn.on
 
     viewIndiLi.on('click',function(e){
