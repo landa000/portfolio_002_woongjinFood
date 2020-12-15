@@ -8,7 +8,6 @@
   var footBox = $('#footBox');
 
   headBox.load('./module/headBox.html');
-  categoryBox.load('./sub01_brand/categoryBox.html');
   productBox.load('./sub01_brand/productBox.html');
   footBox.load('./module/footBox.html');
 

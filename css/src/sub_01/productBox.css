@@ -1,3 +1,13 @@
 /* productBox.css */]
 
-#productBox { width:100%; height:auto; min-height:900px;}
+#productBox { width:100%; height:auto; min-height:1100px;}
+.productArea { width:100%;  max-width:1080px; height:auto; 
+  margin:auto; padding-top:130px;}
+
+/* ====================================================================== */
+.productCategory { width:80%; height:auto; min-height:65px; margin:auto;   }
+  .productCategory li { float:left; width:20%; height:65px; background-color: var(--color-green); }
+
+/* ====================================================================== */
+.productList { width:80%; height:700px; margin:auto;}
+.productList > li { width:160px; height:160px; background-color: var(--color-green);}

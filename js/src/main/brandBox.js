@@ -39,6 +39,5 @@
       brandMoreBtn.find('i').toggleClass('moreview');
 
     });
-
-  });
+  }); //ajax
 })(jQuery);
