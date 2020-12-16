@@ -8,6 +8,10 @@
   }).done(function(data){
     var i=0, j=0, k=0,n=0,productCaLi,prLi;
     var product = data;
+    // var productDrink = product[0];
+    // var productTea = product[1];
+    // var productHealth = product[2];
+    // var productOther = product[3];
 
     // type 위치값 세팅;
     var typeArr = ['all'];
@@ -60,26 +64,26 @@
         for(j=0; j < eachLen; j++){
           listData.push(product[typeIndex].drink_pr[j]);
         }        
-      } // if end
+      }
 
       // console.log(listData);
       // listData.forEach(function(con, idx){})
       productUl.empty();
-      $.each(listData, function(idx){
+      $.each(listData, function(idx, con){
         productUl.append(productTag01);
         prLi = productUl.children('li').eq(idx).find('a');
         prLi.find('span').text(listData[idx].name);
-        prLi.css({backgroundImage:'url('+ imgUrl + listData[idx].imgFile +')'});
+        prLi.css({backgroundImage:'url('+ imgUrl + listData[idx] +')'});
       });
 
         return listData;
-    }; // ListSet end
+    };
     ListSet(0);
 
     for(n=0;n<typeArr.length;n++){
       productCate.append(productTag02);
       productCaLi = productCate.children('li');
-      productCaLi.css({width: 100 / productCaLi.length + '%', borderRight:'1px solid #4a4b4d'});
+      productCaLi.css({width: 100 / productCaLi.length + '%', borderRight:'1px solid #333', boxSizing:'border-box', padding:'1rem'});
       productCaLi.eq(-1).css({border:'none'});
       productCaLi.children('a').eq(n).prepend(typeArr[n]);
     }

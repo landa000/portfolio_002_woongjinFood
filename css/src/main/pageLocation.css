@@ -1,0 +1,8 @@
+/* pageLocation.css */
+
+#pageLocation { width:100%; height:auto; min-height: 50px; margin-top:130px; padding: 0 2.6rem;
+  border-bottom:1px solid var(--color-light-gray);}
+
+#pageLocation ul { width:100%; height: auto; padding-top:15px; box-sizing: border-box;}
+#pageLocation li { float:left; margin-right:2rem;}
+#pageLocation li i { margin-left:2rem;}
