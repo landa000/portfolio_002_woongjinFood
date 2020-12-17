@@ -1,7 +1,7 @@
 /* sub_02 > companyIntro.css */
 
-#companyIntro { position:relative;
-  width:100%; height:auto; min-height:780px; padding-top:130px;
+#companyIntro { 
+  width:100%; height:auto; min-height:780px;
   box-sizing: border-box;}
 
 .logo { position:absolute; top:150px;  left:0; right:0; margin:auto;

@@ -27,7 +27,7 @@ $.ajax({
       viewImg01 = viewImg[i].img;
       viewImgLi.append('<a href="'+ viewImg01.imgLink +'"><span>'+ viewImg01.imgCaption + "</span></a>");
       viewImgLi.css({'backgroundImage':'url('+url+viewImg01.imgSrc+')'});
-      // ========================================= 
+// ==========================================================
       viewImg02 = viewImg[i].img_indi;
       viewIndi.append(viewImgList);
       viewIndiLi = viewIndi.children('li').eq(i);
@@ -51,6 +51,16 @@ $.ajax({
     viewImgLi = viewImgBoxUl.children('li');
     viewIndiLi = viewIndi.children('li');
     viewIndiLi.eq(0).addClass('action');
+
+    viewIndiLi.on('click',function(e){
+      e.preventDefault();
+      var itI = $(this);
+      slideN = itI.index();
+
+      viewImgBoxUl.stop().animate({'marginLeft': slideN * -100+'%'});
+      viewIndi.children('li').eq(slideN).siblings().removeClass('action');
+      viewIndi.children('li').eq(slideN).addClass('action');
+    });
 
     viewBtn.on('click', function(e){
       e.preventDefault();
@@ -77,25 +87,14 @@ $.ajax({
 
             setTimeout(function(){
               permission = true;
-            },timed/4);
+            },timed/8);
             viewIndiLi.eq(slideN).siblings().removeClass('action');
             viewIndiLi.eq(slideN).addClass('action');
           });
         }
       });//viewBtn.on
 
-    viewIndiLi.on('click',function(e){
-      e.preventDefault();
-      var itI = $(this);
-      slideN = itI.index();
-
-      viewImgBoxUl.stop().animate({'marginLeft': slideN * -100+'%'});
-      viewIndi.children('li').eq(slideN).siblings().removeClass('action');
-      viewIndi.children('li').eq(slideN).addClass('action');
-    });
-
-    // slideShow
-
+    // auto slideShow
     var startInterval, stopInterval, k;
 
     var SlideStart = function(){

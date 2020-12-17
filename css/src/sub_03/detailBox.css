@@ -1,0 +1,13 @@
+/* sub_03 > detailBox.css */
+
+#detailBox { width:100%; height:auto; min-height:600px; padding-top:25px; box-sizing: border-box;
+  background-color: var(--color-light-green);}
+
+#detailBox ul { width:70%; min-width:1024px; height:auto; min-height:500px; margin:auto;
+  background-color: #ddd;}
+
+#detailBox ul li { float:left; width: 38%; height:auto; min-height:500px;
+  background-color: #bbb;}
+
+.textArea { float:right; width: 45%; height:auto; 
+  background-color: #aaa;}

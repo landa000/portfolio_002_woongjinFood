@@ -1,6 +1,6 @@
 /* productBox.css */
 
-#productBox { width:100%; height:auto; min-height:1100px;  padding-top:30px;}
+#productBox { width:100%; height:auto; min-height:1100px;  padding-top:30px; margin-bottom:80px;}
 .productArea { width:100%;  max-width:1080px; height:auto;  margin:auto;}
 
 /* ====================================================================== */

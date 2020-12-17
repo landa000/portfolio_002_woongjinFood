@@ -20,7 +20,7 @@
     var productArea = $('.productArea');
     var productCate = $('.productCategory');
     var productUl = productArea.children('.productList');
-    var productTag01 = '<li><a href="#"><span></span></a></li>';
+    var productTag01 = '<li><a href="./brand_Detail.html"><span></span></a></li>';
     var productTag02 = '<li><a href="#"></a></li>';
     var imgUrl = '../img/product/360/';
 
