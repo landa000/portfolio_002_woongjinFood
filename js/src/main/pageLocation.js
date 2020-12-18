@@ -35,4 +35,13 @@
 	
 	// 	}
 	// };
+
+	$(function(){
+    console.log("href: "+$(location).attr('href'));
+    console.log("protocol: "+$(location).attr('protocol'));
+    console.log("host: "+$(location).attr('host'));
+    // console.log("pathname: "+$(location).attr('pathname'));
+    console.log($(location).attr('pathname'));
+});
+
 })(jQuery);

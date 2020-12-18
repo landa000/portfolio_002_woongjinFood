@@ -1,13 +1,15 @@
 /* sub_03 > detailBox.css */
 
-#detailBox { width:100%; height:auto; min-height:600px; padding-top:25px; box-sizing: border-box;
-  background-color: var(--color-light-green);}
+#detailBox { width:100%; height:auto; min-height:600px; padding:25px 0 50px; box-sizing: border-box;}
 
-#detailBox ul { width:70%; min-width:1024px; height:auto; min-height:500px; margin:auto;
-  background-color: #ddd;}
+.detailArea { width:70%; min-width:1024px; height:auto; margin:auto;
+  padding-top: 40px; }
 
-#detailBox ul li { float:left; width: 38%; height:auto; min-height:500px;
-  background-color: #bbb;}
+.titleArea { display:block; width:100%; height:auto; font-size:24px; text-align: center; font-weight:bold;}
+.imgArea { width: 46.2vw; min-width:672.2px; height:30vw; min-height:436.5px;
+  margin:40px auto 40px;
+  background-repeat: no-repeat; background-position: 50% 50%; background-size: cover;}/* 이미지 영역 */
 
-.textArea { float:right; width: 45%; height:auto; 
-  background-color: #aaa;}
+.textArea { width: 75%; height:auto; margin:auto;}
+.textArea dd:first-child { width: 100%; height:auto; margin:auto; margin-bottom:20px;}
+.textArea dd:last-child { width: 100%; height:auto; margin:auto;}

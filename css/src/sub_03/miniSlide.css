@@ -1,3 +1,4 @@
 /* sub_03 > miniSlide.css */
 
-#miniSlide { width:100%; height:auto; min-height:220px;}
+#miniSlide { width:100%; height:auto; min-height:220px;
+  background-color: var(--color-green);}
