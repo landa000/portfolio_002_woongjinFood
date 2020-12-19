@@ -15,7 +15,7 @@
 
     for(; n<len; n++){
       typeArr.push( product[n].type );
-    }
+    } //typeArr에 배열 전체 집어넣음
 
     var productArea = $('.productArea');
     var productCate = $('.productCategory');
