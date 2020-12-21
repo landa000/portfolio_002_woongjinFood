@@ -2,7 +2,7 @@
 
 (function($){
   $.ajax({
-    url:'../data/product_data.json',
+    url:'../data/product/product_data_all.json',
     dataType:'json',
     context: document.body
   }).done(function(data){
