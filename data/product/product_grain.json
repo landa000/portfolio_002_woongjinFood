@@ -1,0 +1,8 @@
+[
+  { "brand":"아침햇살",    "name":"아침햇살", "imgFile":"ah_360.jpg"},
+  { "brand":"초록매실",    "name":"초록매실", "imgFile":"gp_360.jpg"},
+  { "brand":"하늘보리",    "name":"하늘보리", "imgFile":"hb_360.jpg"},
+  { "brand":"결명자차",    "name":"결명자차", "imgFile":"gmj_360.jpg"},
+  { "brand":"누룽지",      "name":"누룽지", "imgFile":"nrj_360.jpg"},
+  { "brand":"내사랑 유자C","name":"내사랑 유자C", "imgFile":"yujac_360.jpg"}
+]

@@ -1,0 +1,13 @@
+[
+  { "brand":"빅토리아", "name":"빅토리아 베리베리", "imgFile":"vic_bb_360.jpg"},
+  { "brand":"빅토리아", "name":"빅토리아 그린애플", "imgFile":"vic_ga_360.jpg"},
+  { "brand":"빅토리아", "name":"빅토리아 자몽", "imgFile":"vic_gf_360.jpg"},
+  { "brand":"빅토리아", "name":"빅토리아 레몬", "imgFile":"vic_lemon_360.jpg"},
+  { "brand":"빅토리아", "name":"빅토리아 라임", "imgFile":"vic_lime_360.jpg"},
+  { "brand":"빅토리아", "name":"빅토리아 파인애플", "imgFile":"vic_pa_360.jpg"},
+  { "brand":"빅토리아", "name":"빅토리아 복숭아", "imgFile":"vic_peach_360.jpg"},
+  { "brand":"빅토리아", "name":"빅토리아 배", "imgFile":"vic_pear_360.jpg"},
+  { "brand":"빅토리아", "name":"빅토리아 청포도", "imgFile":"vic_wg_360.jpg"},
+  { "brand":"815",     "name":"815 콜라", "imgFile":"815_cola_360.jpg"},
+  { "brand":"815",     "name":"815 사이다", "imgFile":"815_cider_360.jpg"}
+]

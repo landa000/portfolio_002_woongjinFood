@@ -1,0 +1,8 @@
+[
+  { "brand":"바바커피", "name":"바바 아메리카노", "imgFile":"baba_am_360.jpg"},
+  { "brand":"바바커피", "name":"바바 롱블랙", "imgFile":"baba_black_360.jpg"},
+  { "brand":"바바커피", "name":"바바 아메리카노 카카오", "imgFile":"baba_cacao_360.jpg"},
+  { "brand":"바바커피", "name":"바바 카라멜마끼야또", "imgFile":"baba_cm_360.jpg"},
+  { "brand":"티즐",     "name":"티즐 유자그린티", "imgFile":"teazle_le_360.jpg"},
+  { "brand":"티즐",     "name":"티즐 피치우롱티", "imgFile":"teazle_pe_360.jpg"}
+]

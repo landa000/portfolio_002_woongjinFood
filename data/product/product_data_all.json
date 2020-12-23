@@ -32,7 +32,7 @@
     { "brand":"초록매실",    "name":"초록매실", "imgFile":"gp_360.jpg"},
     { "brand":"하늘보리",    "name":"하늘보리", "imgFile":"hb_360.jpg"},
     { "brand":"결명자차",    "name":"결명자차", "imgFile":"gmj_360.jpg"},
-    { "brand":"누룽지",    "name":"누룽지", "imgFile":"nrj_360.jpg"},
+    { "brand":"누룽지",      "name":"누룽지", "imgFile":"nrj_360.jpg"},
     { "brand":"내사랑 유자C","name":"내사랑 유자C", "imgFile":"yujac_360.jpg"}
       ] 
     },
@@ -62,10 +62,10 @@
     ]},
     { "type": "health",
       "drink_pr" : [
-      { "brand":"장쾌삼", "name":"장쾌삼 발효홍삼", "imgFile":"jks_bottle_360.jpg"},
-      { "brand":"장쾌삼", "name":"장쾌삼 홍삼력", "imgFile":"jks_pouch_360.jpg"},
-      { "brand":"장쾌삼", "name":"장쾌삼 홍삼정 스틱", "imgFile":"jks_stick_360.jpg"},
-      { "brand":"꿀홍삼", "name":"꿀홍삼", "imgFile":"ghs_360.jpg"},
+      { "brand":"장쾌삼",   "name":"장쾌삼 발효홍삼", "imgFile":"jks_bottle_360.jpg"},
+      { "brand":"장쾌삼",   "name":"장쾌삼 홍삼력", "imgFile":"jks_pouch_360.jpg"},
+      { "brand":"장쾌삼",   "name":"장쾌삼 홍삼정 스틱", "imgFile":"jks_stick_360.jpg"},
+      { "brand":"꿀홍삼",   "name":"꿀홍삼", "imgFile":"ghs_360.jpg"},
       { "brand":"이온더핏", "name":"이온더핏", "imgFile":"ion_360.jpg"}
         ] 
       }

@@ -1,0 +1,10 @@
+#newsBox {width:100%; height:auto; min-height:540px; padding-top:80px;
+  box-sizing:border-box;}
+
+.newsArea { width:80%; min-width:1080px; height:auto; margin:auto;}
+
+.noticeBox {float:left; width:520px; height:auto; min-height:400px;
+  background-color: #ddd;}
+
+.cmBox {float:right; width:520px; height:auto; min-height:400px;
+  background-color: #ddd;}
