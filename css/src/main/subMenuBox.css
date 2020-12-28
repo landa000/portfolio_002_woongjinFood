@@ -1,7 +1,7 @@
 /* main > submenuBox.css */
 
-#submenuBox { position:relative; width:100vw; height:28vw; max-height:380px;
-  padding-top:4vw; box-sizing: border-box;}
+#submenuBox { position:relative; width:100vw; height:28vw;
+  padding-top:4vw; box-sizing: border-box; margin-bottom:30px;}
  
 
 .submenuList { width:100%; height:auto; }
@@ -29,8 +29,9 @@ transition:all 250ms ease;}
   #submenuBox { height:28vw; min-height:300px;
     padding-top:4vw; box-sizing: border-box;}
 
-  .submenuList  ul { width:90%; min-width:0; max-height:0; height:auto; margin:auto; }
+  .submenuList  ul { width:95%; min-width:0; max-height:0; height:auto; margin:auto; }
   .submenuList  ul > li { width:100%; min-width:300px; max-width:0; height: 8vw; min-height:40px; margin:10px 0;}
   .submenuList  dl { float:left; }
+  .submenuList  dd > span { display:none; }
 }
 

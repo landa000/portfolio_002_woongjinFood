@@ -122,4 +122,37 @@ $.ajax({
       'mouseleave' : SlideStart
     });
   });    
+
+
+// scrollTopButton ==========================================
+
+  var win = $(window);
+  var viewImgBox = $('.viewImgBox');
+  // var viewOffset = $(viewImgBox).offset().top;
+  var topBtnInsert = '<button type="button" class="topBtn"><a href="#wrap"><span class="hidden_context">scrollTop</span></a></button>'
+  viewImgBox.append(topBtnInsert);
+  var topBtn = viewImgBox.find('button');
+
+  topBtn.hide();
+
+  win.on('scroll',function(e){
+    var winSt = win.scrollTop();
+    console.log(winSt);
+    if(winSt >= 800){
+      topBtn.stop().fadeIn();
+    }else{
+      topBtn.stop().fadeOut();
+    }
+  });
+
+  var scrollMove = function(e){
+    e.preventDefault();
+    var it = $(this).find('a');
+    var itAttr = it.attr('href');
+    var itOffset = $(itAttr).offset().top;
+
+    $('html,body').animate({ scrollTop : itOffset})
+  };
+  topBtn.on('click',scrollMove);
+
 })(jQuery);

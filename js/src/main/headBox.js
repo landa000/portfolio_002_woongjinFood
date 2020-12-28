@@ -1,6 +1,7 @@
 // headBox.js
 
 (function($){
+
   var navBox = [
     { 'titleNav':{ 'tname':'기업소개','tlink':'./company.html','target':'_self'},
       'subNav'  :[{ 'subname':'웅진식품','sublink':'#'}, { 'subname':'CI소개','sublink':'#'}
@@ -89,5 +90,9 @@
     e.preventDefault();
     navBoxSel.stop().fadeToggle();
   });
+
+// ==============================================================
+
+
 
   })(jQuery);
