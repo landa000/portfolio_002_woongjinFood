@@ -32,6 +32,7 @@ transition:all 250ms ease;}
   .submenuList  ul { width:95%; min-width:0; max-height:0; height:auto; margin:auto; }
   .submenuList  ul > li { width:100%; min-width:300px; max-width:0; height: 8vw; min-height:40px; margin:10px 0;}
   .submenuList  dl { float:left; }
+  .sunmenuList  dt { font-size:0.75rem; top:50%;}
   .submenuList  dd > span { display:none; }
 }
 
