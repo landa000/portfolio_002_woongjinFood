@@ -95,11 +95,12 @@
 // scrollTopButton ==========================================
 
     var win = $(window);
+    var headBox = $('#headBox');
     // var viewOffset = $(viewImgBox).offset().top;
     var topBtnInsert = '<button type="button" class="topBtn"><a href="#wrap"><span class="hidden_context">scrollTop</span>\
     <i class="fas fa-angle-double-up"></i></a></button>'
-    navBoxSel.append(topBtnInsert);
-    var topBtn = navBoxSel.find('button');
+    headBox.append(topBtnInsert);
+    var topBtn = headBox.find('button');
 
     topBtn.hide();
 
