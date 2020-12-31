@@ -1,15 +1,15 @@
 /* sub_02 > companyIntro.css */
 
-#companyIntro { 
-  width:100%; height:auto; min-height:780px;
+#companyIntro { position: relative;
+  width:100%; height:auto; min-height:580px;
   box-sizing: border-box;}
 
-.logo { position:absolute; top:150px;  left:0; right:0; margin:auto;
+.logo { position:absolute; top:0; left:0; right:0; margin:auto;
   width:600px; height:400px; 
   background-image:url("../../../img/wjfooe_logo_bgnone.png");
   background-repeat: no-repeat;
   background-position: 50% 50%; background-size: contain;}
 
-.introText { position:absolute; top:540px; left:0; right:0; margin:auto;
+.introText { position:absolute; top:390px; left:0; right:0; margin:auto;
   width:80%; height:120px; text-align:center;
   font-size: 1.125rem; line-height: 1.7rem; }

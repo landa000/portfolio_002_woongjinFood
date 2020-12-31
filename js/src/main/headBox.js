@@ -3,24 +3,24 @@
 (function($){
 
   var navBox = [
-    { 'titleNav':{ 'tname':'기업소개','tlink':'./company.html','target':'_self'},
-      'subNav'  :[{ 'subname':'웅진식품','sublink':'#'}, { 'subname':'CI소개','sublink':'#'}
+    { 'titleNav':{ 'tname':'기업소개','tlink':'#','target':'_self'},
+      'subNav'  :[{ 'subname':'웅진식품','sublink':'./company.html'}, { 'subname':'CI소개','sublink':'./company.html'}
                 ]},
-    { 'titleNav':{ 'tname':'브랜드','tlink':'./brand.html','target':'_self'},
-      'subNav'  :[{ 'subname':'음료','sublink':'#'},
-                  { 'subname':'차/커피','sublink':'#'},
-                  { 'subname':'건강식품','sublink':'#'},
-                  { 'subname':'과자/당류','sublink':'#'},
+    { 'titleNav':{ 'tname':'브랜드','tlink':'#','target':'_self'},
+      'subNav'  :[{ 'subname':'음료','sublink':'./brand.html'},
+                  { 'subname':'차/커피','sublink':'./brand.html'},
+                  { 'subname':'건강식품','sublink':'./brand.html'},
+                  { 'subname':'과자/당류','sublink':'./brand.html'},
                 ]},
     { 'titleNav':{ 'tname':'새소식','tlink':'#','target':'_self'},
       'subNav'  :[{ 'subname':'이벤트','sublink':'#'},
                   { 'subname':'건강한 SNS','sublink':'#'}
                 ]},
     { 'titleNav':{ 'tname':'고객센터','tlink':'#','target':'_self'},
-      'subNav'  :[{ 'subname':'공지사항','sublink':'#'},
-                  { 'subname':'공시/공고','sublink':'#'},
-                  { 'subname':'FnQ','sublink':'#'},
-                  { 'subname':'고객문의','sublink':'#'},
+      'subNav'  :[{ 'subname':'공지사항','sublink':'./notice.html'},
+                  { 'subname':'공시/공고','sublink':'./notice.html'},
+                  { 'subname':'FnQ','sublink':'./notice.html'},
+                  { 'subname':'고객문의','sublink':'./notice.html'},
                 ]},
   ];
 
@@ -90,9 +90,37 @@
     e.preventDefault();
     navBoxSel.stop().fadeToggle();
   });
-
 // ==============================================================
 
+// scrollTopButton ==========================================
 
+    var win = $(window);
+    // var viewOffset = $(viewImgBox).offset().top;
+    var topBtnInsert = '<button type="button" class="topBtn"><a href="#wrap"><span class="hidden_context">scrollTop</span>\
+    <i class="fas fa-angle-double-up"></i></a></button>'
+    navBoxSel.append(topBtnInsert);
+    var topBtn = navBoxSel.find('button');
+
+    topBtn.hide();
+
+    win.on('scroll',function(e){
+      var winSt = win.scrollTop();
+      console.log(winSt);
+      if(winSt >= 600){
+        topBtn.stop().fadeIn();
+      }else{
+        topBtn.stop().fadeOut();
+      }
+    });
+
+    var scrollMove = function(e){
+      e.preventDefault();
+      var it = $(this).find('a');
+      var itAttr = it.attr('href');
+      var itOffset = $(itAttr).offset().top;
+    
+      $('html,body').animate({ scrollTop : itOffset})
+    };
+    topBtn.on('click',scrollMove);
 
   })(jQuery);

@@ -69,4 +69,33 @@
       linkBoxSelUl.append(linkList);
     }
   
+    var win = $(window);
+    // var viewOffset = $(viewImgBox).offset().top;
+    var topBtnInsert = '<button type="button" class="topBtn"><a href="#wrap"><span class="hidden_context">scrollTop</span>\
+    <i class="fas fa-angle-double-up"></i></a></button>'
+    navBoxSel.append(topBtnInsert);
+    var topBtn = navBoxSel.find('button');
+
+    topBtn.hide();
+
+    win.on('scroll',function(e){
+      var winSt = win.scrollTop();
+      console.log(winSt);
+      if(winSt >= 600){
+        topBtn.stop().fadeIn();
+      }else{
+        topBtn.stop().fadeOut();
+      }
+    });
+
+    var scrollMove = function(e){
+      e.preventDefault();
+      var it = $(this).find('a');
+      var itAttr = it.attr('href');
+      var itOffset = $(itAttr).offset().top;
+    
+      $('html,body').animate({ scrollTop : itOffset})
+    };
+    topBtn.on('click',scrollMove);
+
   })(jQuery);

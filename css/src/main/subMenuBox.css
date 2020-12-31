@@ -1,16 +1,14 @@
 /* main > submenuBox.css */
 
-#submenuBox { position:relative; width:100vw; height:28vw;
-  padding-top:4vw; box-sizing: border-box; margin-bottom:30px;}
+#submenuBox { position:relative; width:100%; height:28vw;
+  padding-top:6vw; box-sizing: border-box; margin-bottom:30px;}
  
 
 .submenuList { width:100%; height:auto; }
 
 .submenuList ul { width:80%; max-width:1440px; height:auto; margin:auto; }
 
-.submenuList ul > li { float:left;
-  width:22%; 
-  height: 18vw; margin: 0 1%;
+.submenuList ul > li { float:left; width:22%; height: 18vw; margin: 0 1%;
   border:1px solid var(--color-light-green);}
 
 .submenuList dl { position:relative; width:100%; height:100%;
@@ -27,11 +25,12 @@ transition:all 250ms ease;}
 @media screen and (max-width:439px) {
 
   #submenuBox { height:28vw; min-height:300px;
-    padding-top:4vw; box-sizing: border-box;}
+    padding-top:10vw; box-sizing: border-box;}
 
   .submenuList  ul { width:95%; min-width:0; max-height:0; height:auto; margin:auto; }
-  .submenuList  ul > li { width:100%; min-width:300px; max-width:0; height: 8vw; min-height:40px; margin:10px 0;}
-  .submenuList  dl { float:left; }
+  .submenuList  ul > li { width:100%; min-width:300px; max-width:0; height: 8vw; min-height:40px; 
+    margin:10px auto;}
+  .submenuList  dl { float:left; background-size: 10%; background-position: 90% 50%;}
   .sunmenuList  dt { font-size:0.75rem; top:50%;}
   .submenuList  dd > span { display:none; }
 }
